@@ -1,0 +1,11 @@
+.image_blur {
+    display: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.47222216523328087) 63%, rgba(0,0,0,0.37418294954700626) 80%, rgba(255,255,255,0) 100%);
+    border-radius: 8vh;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}

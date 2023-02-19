@@ -1,0 +1,40 @@
+.sidenav {
+    display: flex;
+    justify-content: center;
+    height: 79vh;
+    width: 15%;
+    position: fixed;
+    top: 0;
+    margin: 11vh 0;
+    left: -100vh;
+    padding-top: 10vh;
+    transition: left 0.5s ease;
+    border-radius: 5vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    /*Glassmorphism effect*/
+    background: rgba( 225, 217, 217, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.sidenav ul {
+    list-style-type: none;
+}
+
+.sidenav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5vh;
+    font-size: 2em;
+}
+
+.sidenav.active {
+    left: 0;
+}
+

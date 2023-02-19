@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <link rel="stylesheet" href="./css/menu.css">
+        <link rel="stylesheet" href="./css/image_gallery.css">
+        <link rel="stylesheet" href="./css/image_mainstyle.css">
+    </head>
+    <body style="background-image: url(./gallery/1.png);background-size: cover;">
+        <header>
+            <div id="openBtn" class="header-left">
+                <a href="#"><div id="menu-burger" class="closed-nav">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div></a>
+                <p>Title</p>
+            </div>
+            <div class="header-center">
+                <p>Part</p>
+            </div>
+            <div class="header-right">
+                <p>Profil</p>
+            </div>
+        </header>
+
+        <div id="main-div">
+            Salut
+            <div class="same_image"></div>
+        </div>
+        
+        <div id="mySidenav" class="sidenav">
+            <ul>
+                <li id="home"><a href="./index.html">Home</a></li>
+            </ul>
+        </div>
+
+        <script>
+            var sidenav = document.getElementById("mySidenav");
+            var openBtn = document.getElementById("openBtn");
+            var closeBtn = document.getElementById("closeBtn");
+            
+            openBtn.addEventListener("click", function open_close_Nav() {
+                if (sidenav.classList.contains("active")) {
+                    sidenav.classList.remove("active");
+                } else {
+                    sidenav.classList.add("active");
+                }
+            });
+        </script>
+    </body>
+</html>
