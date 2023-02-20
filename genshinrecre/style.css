@@ -1,0 +1,283 @@
+@font-face {
+    font-family: Genshin;
+    src: url(./font/Genshin-Impact-Font/zh-cn.ttf) format('truetype');
+}
+
+html{
+    height: 100%;
+    min-height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#main{
+    height: 100vh;
+    width: 100%;
+    background:url(https://cdn.discordapp.com/attachments/1075758463092797471/1076254893972664390/Sans_titre_1564_2.png) fixed center;
+    background-size:cover;
+    overflow-y: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    font-family: Genshin;
+}
+
+#header{
+    height: 10vh;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    color: #dbc28f;
+}
+
+.img{
+    background: url(https://cdn.discordapp.com/attachments/1075833531411988562/1075878630766428301/hydro_logo.png);
+    background-size:cover;
+    height: 10vh;
+    width: 10vh;
+}
+
+#background-header{
+    z-index: -1;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+}
+
+#interface{
+    margin-top: 10vh;
+    display: flex;
+    height: 100%;
+    bottom: auto;
+    font-family: Genshin;
+    font-size: 160%;
+}
+
+.left{
+    width: 25%;
+}
+
+.middle{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-container{
+    top: 0;
+
+    height: 100vh;
+    width: 100vh;
+}
+.middle .img-container .img{
+    background-image: url(https://media.discordapp.net/attachments/1042168841360384030/1042168924004962304/IMG-4850.PNG?width=571&height=571);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 90vh;
+}
+
+.right{
+    width: 25%;
+}
+
+#right-div{
+    width: 90%;
+    height: 95%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.right-list{
+    list-style-type: none;
+    margin-bottom: 15%;
+}
+
+.effect-caption{
+    font-size: 80%;
+    margin-top: -3vh;
+    display: flex;
+    margin-top: 1vh;
+}
+
+.effect-caption-point{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    height: 1.5vh;
+    width: 1.5vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+}
+
+.display-none{
+    display: none;
+}
+
+.standart-stats{
+    margin-top: 0.5vh;
+    font-size: 2.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 3vh;
+}
+
+.caption{
+    margin-top: 2vh;
+    font-size: 2.5vh;
+}
+
+.details-1{
+    margin-top: 2vh;
+    margin-bottom: 1.5vh;
+    height: 5vh;
+    width: 100%;
+    border-radius: 1em;
+    background-color: rgba(255, 255, 255, 0.174);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms ease;
+}
+.details-2{
+    display: flex;
+    justify-content: center;
+    background-color: #282d4b37;
+    height: 90%;
+    width: 98%;
+    border-radius: 1em;
+    align-items: center;
+}
+.details-3{
+    height: 90%;
+    width: 98.5%;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.152);
+}
+.details-1:hover{
+    background-color: rgba(255, 255, 255, 0.074);
+    transition: 200ms ease;
+}
+
+.lvl-bar{
+    margin-bottom: 2.5vh;
+}
+
+.friendship-bar{
+    margin-top: 1vh;
+}
+
+.li-stats{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2vh;
+}
+
+.div-stats:hover{
+    background: linear-gradient(90deg, rgba(255,255,255,0.09967314562543772) 0%, rgba(255,255,255,0.05205409800639005) 51%, rgba(255,255,255,0) 100%);
+    border-radius: 1em;
+    width: 25vh;
+}
+
+.div-stats{
+    display: flex;
+    align-items: center;
+    height: 6vh;
+}
+
+.div-stats-active{
+    font-size: 120%;
+}
+
+.img-not-active{
+    background-image: url(https://cdn.discordapp.com/attachments/1075758463092797471/1076199435241013358/Sans_titre_1626_2.png);
+    background-size: cover;
+    height: 2vh;
+    width: 2vh;
+    margin-right: 1vh;
+}
+
+.div-stats:hover .img-not-active{
+    background-image: url(https://cdn.discordapp.com/attachments/1075758463092797471/1076246477338333325/Sans_titre_1626.png);
+    background-size: cover;
+    height: 2vh;
+    width: 2vh;
+    margin-right: 1vh;
+}
+
+.img-active{
+    background-image: url(https://cdn.discordapp.com/attachments/1075758463092797471/1076199434943221980/Sans_titre_1626.png);
+    background-size: cover;
+    height: 3vh;
+    width: 3vh;
+    margin-right: 1vh;
+}
+
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+.box{
+    position: relative;
+    width: 40vh;
+    height: 40vh;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+}
+@keyframes animate{
+    0%
+    {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%
+    {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.artifacts-middle span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 70deg)) translateZ(200px);
+}
+.artifacts-middle span img{
+    top: 25%;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}

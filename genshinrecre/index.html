@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Genshin</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="main">
+            <div id="header">
+                <div id="background-header"></div>
+                <div class="img"></div>
+                <p>Hydro / Noé Drakaï</p>
+            </div>
+            <div id="interface">
+                <div class="left">
+                    <ul id="menu-left">
+                        <div class="div-stats-active attributes-div">
+                            <li class="li-stats">
+                                <div class="img-active attributes-img"></div>
+                                <a href="#Attributes"> 
+                                    Attributes
+                                </a>
+                            </li>
+                        </div>
+                        <div class="div-stats weapons-div">
+                            <li class="li-stats">
+                                <div class="img-not-active weapons-img"></div>
+                                <a href="#Weapons">
+                                    Weapons
+                                </a>
+                            </li>
+                        </div>
+                        <div class="div-stats artifacts-div">
+                            <li class="li-stats">
+                                <div class="img-not-active artifacts-img"></div>
+                                <a href="#Artifacts">
+                                    Artifacts
+                                </a>
+                            </li>
+                        </div>
+                        <div class="div-stats constellation-div">
+                            <li class="li-stats">
+                                <div class="img-not-active constellation-img"></div>
+                                <a href="#Constellation">
+                                    Constellation
+                                </a>
+                            </li>
+                        </div>
+                        <div class="div-stats talents-div">
+                            <li class="li-stats">
+                                <div class="img-not-active talents-img"></div>
+                                <a href="#Talents">
+                                    Talents
+                                </a>
+                            </li>
+                        </div>
+                        <div class="div-stats profile-div">
+                            <li class="li-stats">
+                                <div class="img-not-active profile-img"></div>
+                                <a href="#Profile">
+                                    Profile
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="middle">
+                    <div class="img-container"><div class="img"></div></div>
+                    <div class="main-artifacts-middle artifacts-middle display-none" style="background-image: url(https://media.discordapp.net/attachments/1042168841360384030/1042168924004962304/IMG-4850.PNG?width=571&height=571);background-size: cover;position: absolute;">
+                        <div class="artifacts-middle">
+                            <span style="--i:1"><img src="https://cdn.discordapp.com/attachments/1042168841360384030/1042823664653062175/Item_Gilded_Corsage.PNG" alt=""></span>
+                            <span style="--i:2"><img src="https://cdn.discordapp.com/attachments/1042168841360384030/1042823664262979634/Item_Gust_of_Nostalgia.png" alt=""></span>
+                            <span style="--i:3"><img src="https://cdn.discordapp.com/attachments/1042168841360384030/1042471995520057374/Item_Frozen_Homelands_Demise.png" alt=""></span>
+                            <span style="--i:4"><img src="https://cdn.discordapp.com/attachments/1042168841360384030/1042201814730285056/Item_Goblet_of_Thundering_Deep.png" alt=""></span>
+                            <span style="--i:5"><img src="https://cdn.discordapp.com/attachments/1042168841360384030/1042201814436691968/Item_Wine-Stained_Tricorne.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div id="right-div">
+                        <ul class="right-list attributes-list active-list">
+                            <li class="name">Noé Drakaï</li>
+                            <li class="lvl-stars">✦✦✦✦✦✦</li>
+                            <li class="lvl" style="display: flex;">Level 90<div style="color: #6f81ae;">/90</div></li>
+                            <li class="lvl-bar"><div style="background-color: #2294c0;width: 100%;height: 0.5vh;"></div></li>
+                            <li class="pv standart-stats" style="background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.05485521845456931) 35%, rgba(0,0,0,0.09967314562543772) 50%, rgba(71,71,71,0.049252977558210786) 65%, rgba(255,255,255,0) 100%);">
+                                <div style="display: flex;align-items: center;">
+                                    <div style="background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/52673874_kQ6ThHKGWbaMzYv.png);height: 3vh;width: 3vh;background-size: cover;"></div>
+                                    <p>Max HP</p>
+                                </div>
+                                <p>16,125</p>
+                            </li>
+                            <li class="atk standart-stats">
+                                <div style="display: flex;align-items: center;">
+                                    <div style="background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/52673869_W1xx2LK8LbOGT7N.png);height: 3vh;width: 3vh;background-size: cover;"></div>
+                                    <p>ATK</p>
+                                </div>
+                                <p>1,842</p>
+                            </li>
+                            <li class="def standart-stats" style="background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.05485521845456931) 35%, rgba(0,0,0,0.09967314562543772) 50%, rgba(71,71,71,0.049252977558210786) 65%, rgba(255,255,255,0) 100%);">
+                                <div style="display: flex;align-items: center;">
+                                    <div style="background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/52673880_MfZB2ZbDghh4uED.png);height: 3vh;width: 3vh;background-size: cover;"></div>
+                                    <p>DEF</p>
+                                </div>
+                                <p>840</p>
+                            </li>
+                            <li class="em standart-stats">
+                                <div style="display: flex;align-items: center;">
+                                    <div style="background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/52673877_CFesc1KodTyLiYb.png);height: 3vh;width: 3vh;background-size: cover;"></div>
+                                    <p>Elementary Mastery</p>
+                                </div>
+                                <p>689</p>
+                            </li>
+                            <li class="stm standart-stats" style="background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.05485521845456931) 35%, rgba(0,0,0,0.09967314562543772) 50%, rgba(71,71,71,0.049252977558210786) 65%, rgba(255,255,255,0) 100%);">
+                                <div style="display: flex;align-items: center;">
+                                    <div style="background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/52673873_97G8jXsCrJr3T2S.png);height: 3vh;width: 3vh;background-size: cover;"></div>
+                                    <p>Max Stamina</p>
+                                </div>
+                                <p>225</p>
+                            </li>
+                            <a href=""><li class="details-1">
+                                <div class="details-2">
+                                    <div class="details-3">
+                                            Details
+                                    </div>
+                                </div>
+                            </li></a>
+                            <li class="friendship standart-stats" style="background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.05485521845456931) 35%, rgba(0,0,0,0.09967314562543772) 50%, rgba(71,71,71,0.049252977558210786) 65%, rgba(255,255,255,0) 100%);">
+                                <div style="display: flex;align-items: center;">
+                                    <div style="background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/52673769_qluIUaelkOsMiSL.png);height: 2.3vh;width: 3vh;background-size: cover;margin-right: 1vh;"></div>
+                                    <p>Friendship</p>
+                                </div>
+                                <p>10</p>
+                            </li>
+                            <li class="friendship-bar"><div style="background-color: #a39ef5;width: 100%;height: 0.5vh;"></div></li>
+                            <li class="caption">A young dragon who wants to pursue the mastery of the polearm. He is a calmed and reserved boy who is passionated with poetry and novels. It says that when he starts something, he won't stop until he's done, whatever it would take.</li>
+                        </ul>
+                        <ul class="right-list weapons-list display-none">
+                            <li class="name">Wave-breaker</li>
+                            <li class="type" style="font-size: 60%;color: #d4d9db9f;margin-top: 1vh;margin-bottom: 0.5vh;">Polearm</li>
+                            <li class="atk" style="font-size: 80%;background-color: rgba(183, 183, 183, 0.11);border-radius: 0.1em;padding-left: 1vh;padding-right: 0.7vh;">
+                                <div style="display: flex;justify-content: space-between;height: 4vh;align-items: center;">
+                                    <p>Base ATK</p>
+                                    <p>674</p>
+                                </div>
+                            </li>
+                            <li class="crit-dmg" style="font-size: 80%;background-color: rgba(183, 183, 183, 0.11);border-radius: 0.1em;margin-top: 0.7vh;padding-left: 1vh;padding-right: 0.7vh;">
+                                <div style="display: flex;justify-content: space-between;height: 4vh;align-items: center;">
+                                    <p>CRIT DMG</p>
+                                    <p>69.0%</p>
+                                </div>
+                            </li>
+                            <li class="rarity-stars" style="margin-top: 1vh;color: #fecb31;">★★★★★</li>
+                            <li class="lvl" style="font-size: 80%;display: flex;align-items: center;"><div style="background-color: rgba(0, 0, 0, 0.462);border-radius: 0.1em;padding-left: 0.5vh;padding-right: 0.5vh;">Lv.90<font color="#6f81ae">/90</font></div><div style="margin-left: 1vh;font-size: 110%;">✦✦✦✦✦✦</div></li>
+                            <li class="refinement-stars" style="font-size: 90%;color: #f1e299;margin-top: 1vh;">Refinement Rank 5</li>
+                            <li class="effect" style="font-size: 80%;margin-bottom: 0.5vh;margin-top: 2vh;">Vengeful waves of the Drake</li>
+                            <li class="effect-caption">
+                                <div>
+                                    <span> • Gain <font color="#5eb0d5">12~24%</font> All Elemental DMG Bonus. The equipping character also gains <font color="#5eb0d5">52~104%</font> of their Elemental Mastery as bonus ATK. When an Elemental Skill hits opponents, the Drake's double wrath effect will be gained : <font color="#5eb0d5">1</font> Pyro Drake claw will stack up each time an oppenent is hit by the Elemental skill before exploding on the nearby enemies, dealing Pyro DMG. Max <font color="#5eb0d5">5</font> stacks, this effect can occur every <font color="#5eb0d5">5</font> s.</span>
+                                </div>
+                            </li>
+                            <li class="caption" style="color: #d4d9db9f;font-size: 70%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim vehicula ultricies. Vestibulum finibus tellus nec pretium gravida. Mauris hendrerit vestibulum nisl tempus varius. Nullam eget eros ligula. Morbi volutpat, quam ac malesuada tristique, lectus erat hendrerit ipsum, et lacinia tellus tellus ut dolor.</li>
+                        </ul>
+                        <ul class="right-list artifacts-list display-none">
+                            <li>Max HP</li>
+                            <li>ATK</li>
+                            <li>DEF</li>
+                            <li>Elemental Mastery</li>
+                        </ul>
+                        <ul class="right-list constellation-list display-none">
+                        </ul>
+                        <ul class="right-list talents-list display-none">
+                        </ul>
+                        <ul class="right-list profile-list display-none">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <script>
+                const attributes = document.querySelector('.attributes-div');
+                const weapons = document.querySelector('.weapons-div');
+                const artifacts = document.querySelector('.artifacts-div');
+                const constellation = document.querySelector('.constellation-div');
+                const talents = document.querySelector('.talents-div');
+                const profile = document.querySelector('.profile-div');
+
+                const attributes_img = document.querySelector('.attributes-img');
+                const weapons_img = document.querySelector('.weapons-img');
+                const artifacts_img = document.querySelector('.artifacts-img');
+                const constellation_img = document.querySelector('.constellation-img');
+                const talents_img = document.querySelector('.talents-img');
+                const profile_img = document.querySelector('.profile-img');
+
+                const attributes_list = document.querySelector('.attributes-list');
+                const weapons_list = document.querySelector('.weapons-list');
+                const artifacts_list = document.querySelector('.artifacts-list');
+                const constellation_list = document.querySelector('.constellation-list');
+                const talents_list = document.querySelector('.talents-list');
+                const profile_list = document.querySelector('.profile-list');
+
+                const main_artifacts_middle = document.querySelector('.main-artifacts-middle');
+
+                attributes.addEventListener('click', function() {
+                    var active_stats = document.querySelector('.div-stats-active');
+                    var active_img = document.querySelector('.img-active');
+
+                    active_stats.classList.remove('div-stats-active');
+                    active_stats.classList.add('div-stats');
+                    active_img.classList.add('img-not-active');
+                    active_img.classList.remove('img-active');
+                    
+                    attributes.classList.add('div-stats-active');
+                    attributes_img.classList.remove("img-not-active");
+                    attributes.classList.remove('div-stats');
+                    attributes_img.classList.add('img-active');
+
+                    var active_list = document.querySelector('.active-list');
+                    active_list.classList.remove('active-list');
+                    active_list.classList.add('display-none');
+                    attributes_list.classList.remove('display-none');
+                    attributes_list.classList.add('active-list');
+                });
+                weapons.addEventListener('click', function() {
+                    var active_stats = document.querySelector('.div-stats-active');
+                    var active_img = document.querySelector('.img-active');
+
+                    active_stats.classList.remove('div-stats-active');
+                    active_stats.classList.add('div-stats');
+                    active_img.classList.add('img-not-active');
+                    active_img.classList.remove('img-active');
+
+                    weapons_img.classList.remove('img-not-active');
+                    weapons.classList.add('div-stats-active');
+                    weapons.classList.remove('div-stats');
+                    weapons_img.classList.add('img-active');
+
+                    var active_list = document.querySelector('.active-list');
+                    active_list.classList.remove('active-list');
+                    active_list.classList.add('display-none');
+                    weapons_list.classList.remove('display-none');
+                    weapons_list.classList.add('active-list');
+                });
+                artifacts.addEventListener('click', function() {
+                    var active_stats = document.querySelector('.div-stats-active');
+                    var active_img = document.querySelector('.img-active');
+
+                    active_stats.classList.remove('div-stats-active');
+                    active_stats.classList.add('div-stats');
+                    active_img.classList.add('img-not-active');
+                    active_img.classList.remove('img-active');
+
+                    artifacts_img.classList.remove("img-not-active");
+                    artifacts.classList.add('div-stats-active');
+                    artifacts.classList.remove('div-stats');
+                    artifacts_img.classList.add('img-active');
+
+                    var active_list = document.querySelector('.active-list');
+                    active_list.classList.remove('active-list');
+                    active_list.classList.add('display-none');
+                    artifacts_list.classList.remove('display-none');
+                    artifacts_list.classList.add('active-list');
+                });
+                constellation.addEventListener('click', function() {
+                    var active_stats = document.querySelector('.div-stats-active');
+                    var active_img = document.querySelector('.img-active');
+
+                    active_stats.classList.remove('div-stats-active');
+                    active_stats.classList.add('div-stats');
+                    active_img.classList.add('img-not-active');
+                    active_img.classList.remove('img-active');
+
+                    constellation_img.classList.remove("img-not-active");
+                    constellation.classList.add('div-stats-active');
+                    constellation.classList.remove('div-stats');
+                    constellation_img.classList.add('img-active');
+
+                    var active_list = document.querySelector('.active-list');
+                    active_list.classList.remove('active-list');
+                    active_list.classList.add('display-none');
+                    constellation_list.classList.remove('display-none');
+                    constellation_list.classList.add('active-list');
+                });
+                talents.addEventListener('click', function() {
+                    var active_stats = document.querySelector('.div-stats-active');
+                    var active_img = document.querySelector('.img-active');
+
+                    active_stats.classList.remove('div-stats-active');
+                    active_stats.classList.add('div-stats');
+                    active_img.classList.add('img-not-active');
+                    active_img.classList.remove('img-active');
+
+                    talents_img.classList.remove("img-not-active");
+                    talents.classList.add('div-stats-active');
+                    talents.classList.remove('div-stats');
+                    talents_img.classList.add('img-active');
+
+                    var active_list = document.querySelector('.active-list');
+                    active_list.classList.remove('active-list');
+                    active_list.classList.add('display-none');
+                    talents_list.classList.remove('display-none');
+                    talents_list.classList.add('active-list');
+                });
+                profile.addEventListener('click', function() {
+                    var active_stats = document.querySelector('.div-stats-active');
+                    var active_img = document.querySelector('.img-active');
+
+                    active_stats.classList.remove('div-stats-active');
+                    active_stats.classList.add('div-stats');
+                    active_img.classList.add('img-not-active');
+                    active_img.classList.remove('img-active');
+
+                    profile_img.classList.remove("img-not-active");
+                    profile.classList.add('div-stats-active');
+                    profile.classList.remove('div-stats');
+                    profile_img.classList.add('img-active');
+
+                    var active_list = document.querySelector('.active-list');
+                    active_list.classList.remove('active-list');
+                    active_list.classList.add('display-none');
+                    profile_list.classList.remove('display-none');
+                    profile_list.classList.add('active-list');
+                });
+            </script>
+        </div>
+    </body>
+</html>
