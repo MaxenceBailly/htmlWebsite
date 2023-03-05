@@ -199,6 +199,7 @@
                 const profile_list = document.querySelector('.profile-list');
 
                 const main_artifacts_middle = document.querySelector('.main-artifacts-middle');
+                const img_container = document.querySelector('.img-container');
 
                 attributes.addEventListener('click', function() {
                     var active_stats = document.querySelector('.div-stats-active');
@@ -219,6 +220,9 @@
                     active_list.classList.add('display-none');
                     attributes_list.classList.remove('display-none');
                     attributes_list.classList.add('active-list');
+                    
+                    main_artifacts_middle.classList.add('display-none');
+                    img_container.classList.remove('display-none');
                 });
                 weapons.addEventListener('click', function() {
                     var active_stats = document.querySelector('.div-stats-active');
@@ -239,6 +243,9 @@
                     active_list.classList.add('display-none');
                     weapons_list.classList.remove('display-none');
                     weapons_list.classList.add('active-list');
+
+                    main_artifacts_middle.classList.add('display-none');
+                    img_container.classList.remove('display-none');
                 });
                 artifacts.addEventListener('click', function() {
                     var active_stats = document.querySelector('.div-stats-active');
@@ -259,6 +266,9 @@
                     active_list.classList.add('display-none');
                     artifacts_list.classList.remove('display-none');
                     artifacts_list.classList.add('active-list');
+
+                    main_artifacts_middle.classList.remove('display-none');
+                    img_container.classList.add('display-none');
                 });
                 constellation.addEventListener('click', function() {
                     var active_stats = document.querySelector('.div-stats-active');
@@ -279,6 +289,9 @@
                     active_list.classList.add('display-none');
                     constellation_list.classList.remove('display-none');
                     constellation_list.classList.add('active-list');
+
+                    main_artifacts_middle.classList.add('display-none');
+                    img_container.classList.remove('display-none');
                 });
                 talents.addEventListener('click', function() {
                     var active_stats = document.querySelector('.div-stats-active');
@@ -299,6 +312,9 @@
                     active_list.classList.add('display-none');
                     talents_list.classList.remove('display-none');
                     talents_list.classList.add('active-list');
+
+                    main_artifacts_middle.classList.add('display-none');
+                    img_container.classList.remove('display-none');
                 });
                 profile.addEventListener('click', function() {
                     var active_stats = document.querySelector('.div-stats-active');
@@ -319,6 +335,9 @@
                     active_list.classList.add('display-none');
                     profile_list.classList.remove('display-none');
                     profile_list.classList.add('active-list');
+
+                    main_artifacts_middle.classList.add('display-none');
+                    img_container.classList.remove('display-none');
                 });
             </script>
         </div>

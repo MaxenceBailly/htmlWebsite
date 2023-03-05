@@ -231,27 +231,12 @@ a{
     margin-right: 1vh;
 }
 
-
-
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: black;
-}
-.box{
+.artifacts-middle{
     position: relative;
     width: 40vh;
     height: 40vh;
     transform-style: preserve-3d;
-    animation: animate 20s linear infinite;
+    animation: animate 30s linear infinite;
 }
 @keyframes animate{
     0%
