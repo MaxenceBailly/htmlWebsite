@@ -1,0 +1,18 @@
+main{
+    scroll-behavior: smooth;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1vh;
+    padding-right: 3vh;
+    right: 0;
+    text-align: justify;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}

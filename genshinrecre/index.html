@@ -75,6 +75,7 @@
                             <span style="--i:5"><img src="https://cdn.discordapp.com/attachments/1042168841360384030/1042201814436691968/Item_Wine-Stained_Tricorne.png" alt=""></span>
                         </div>
                     </div>
+                    <div class="main-constellation-middle display-none"><div class="img-constellation"></div></div>
                 </div>
                 <div class="right">
                     <div id="right-div">
@@ -121,7 +122,7 @@
                             <a href=""><li class="details-1">
                                 <div class="details-2">
                                     <div class="details-3">
-                                            Details
+                                        Details
                                     </div>
                                 </div>
                             </li></a>
@@ -162,10 +163,55 @@
                             <li class="caption" style="color: #d4d9db9f;font-size: 70%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim vehicula ultricies. Vestibulum finibus tellus nec pretium gravida. Mauris hendrerit vestibulum nisl tempus varius. Nullam eget eros ligula. Morbi volutpat, quam ac malesuada tristique, lectus erat hendrerit ipsum, et lacinia tellus tellus ut dolor.</li>
                         </ul>
                         <ul class="right-list artifacts-list display-none">
-                            <li>Max HP</li>
-                            <li>ATK</li>
-                            <li>DEF</li>
-                            <li>Elemental Mastery</li>
+                            <li class="pv standart-stats" style="background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.05485521845456931) 35%, rgba(0,0,0,0.09967314562543772) 50%, rgba(71,71,71,0.049252977558210786) 65%, rgba(255,255,255,0) 100%);">
+                                <div style="display: flex;align-items: center;">
+                                    <div style="background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/52673874_kQ6ThHKGWbaMzYv.png);height: 3vh;width: 3vh;background-size: cover;"></div>
+                                    <p>Max HP</p>
+                                </div>
+                                <p>1,000</p>
+                            </li>
+                            <li class="atk standart-stats">
+                                <div style="display: flex;align-items: center;">
+                                    <div style="background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/52673869_W1xx2LK8LbOGT7N.png);height: 3vh;width: 3vh;background-size: cover;"></div>
+                                    <p>ATK</p>
+                                </div>
+                                <p>1,000</p>
+                            </li>
+                            <li class="def standart-stats" style="background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.05485521845456931) 35%, rgba(0,0,0,0.09967314562543772) 50%, rgba(71,71,71,0.049252977558210786) 65%, rgba(255,255,255,0) 100%);">
+                                <div style="display: flex;align-items: center;">
+                                    <div style="background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/52673880_MfZB2ZbDghh4uED.png);height: 3vh;width: 3vh;background-size: cover;"></div>
+                                    <p>DEF</p>
+                                </div>
+                                <p>1,000</p>
+                            </li>
+                            <li class="em standart-stats">
+                                <div style="display: flex;align-items: center;">
+                                    <div style="background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/52673877_CFesc1KodTyLiYb.png);height: 3vh;width: 3vh;background-size: cover;"></div>
+                                    <p>Elementary Mastery</p>
+                                </div>
+                                <p>1,000</p>
+                            </li>
+                            <a href=""><li class="details-1">
+                                <div class="details-2">
+                                    <div class="details-3">
+                                        Artifact Details
+                                    </div>
+                                </div>
+                            </li></a>
+                            <li class="set-bonus">
+                                <div>
+                                    <p>Set Bonus</p>
+                                    <div class="set">
+                                        <p>Name set 1</p>
+                                        <p class="bonus-info">Bla blablablabl ablablabl ablablabla blabla</p>
+                                    </div>
+                                    
+                                    <div class="set">
+                                        <p>Name set 2</p>
+                                        <p class="bonus-info">Blablablabl ablabla blabla blablab lablabla</p>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                         <ul class="right-list constellation-list display-none">
                         </ul>
@@ -201,6 +247,8 @@
                 const main_artifacts_middle = document.querySelector('.main-artifacts-middle');
                 const img_container = document.querySelector('.img-container');
 
+                const main_constellation_middle = document.querySelector(".main-constellation-middle");
+
                 attributes.addEventListener('click', function() {
                     var active_stats = document.querySelector('.div-stats-active');
                     var active_img = document.querySelector('.img-active');
@@ -223,6 +271,8 @@
                     
                     main_artifacts_middle.classList.add('display-none');
                     img_container.classList.remove('display-none');
+
+                    main_constellation_middle.classList.add('display-none');
                 });
                 weapons.addEventListener('click', function() {
                     var active_stats = document.querySelector('.div-stats-active');
@@ -246,6 +296,8 @@
 
                     main_artifacts_middle.classList.add('display-none');
                     img_container.classList.remove('display-none');
+
+                    main_constellation_middle.classList.add('display-none');
                 });
                 artifacts.addEventListener('click', function() {
                     var active_stats = document.querySelector('.div-stats-active');
@@ -269,6 +321,8 @@
 
                     main_artifacts_middle.classList.remove('display-none');
                     img_container.classList.add('display-none');
+
+                    main_constellation_middle.classList.add('display-none');
                 });
                 constellation.addEventListener('click', function() {
                     var active_stats = document.querySelector('.div-stats-active');
@@ -292,6 +346,9 @@
 
                     main_artifacts_middle.classList.add('display-none');
                     img_container.classList.remove('display-none');
+
+                    img_container.classList.add('display-none');
+                    main_constellation_middle.classList.remove('display-none');
                 });
                 talents.addEventListener('click', function() {
                     var active_stats = document.querySelector('.div-stats-active');
@@ -315,6 +372,8 @@
 
                     main_artifacts_middle.classList.add('display-none');
                     img_container.classList.remove('display-none');
+
+                    main_constellation_middle.classList.add('display-none');
                 });
                 profile.addEventListener('click', function() {
                     var active_stats = document.querySelector('.div-stats-active');
@@ -338,6 +397,8 @@
 
                     main_artifacts_middle.classList.add('display-none');
                     img_container.classList.remove('display-none');
+
+                    main_constellation_middle.classList.add('display-none');
                 });
             </script>
         </div>
