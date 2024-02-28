@@ -295,3 +295,91 @@ a{
     height: 90vh;
     width: 90vh;
 }
+
+.voice{
+    font-size: 2.5vh;
+}
+
+.talent{
+    padding-right: 2vh;
+    margin-top: 0.5vh;
+    font-size: 2.2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 3vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.talent p{
+    text-align: right;
+}
+
+.talent div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.talent:hover {
+    background: linear-gradient(to right, transparent, rgba(227, 222, 222, 0.264), transparent);
+}
+
+.talent .img{
+    height: 10vh;
+    width: 10vh;
+    background-size: cover;
+    padding-right: 2vh;
+}
+
+.constellation-container{
+    list-style: none;
+    height: 80vh;
+    width: 75%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://cdn.discordapp.com/attachments/1075758463092797471/1189230783261573130/constellation_arc_de_cercle.png?ex=659d6879&is=658af379&hm=24a16ce9ada0231ddee53c6c78b30bab05f75057e4879b4e26f3849d0ddbb90d&);
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+}
+
+.constellation{
+    padding-right: 2vh;
+    margin-top: 0.5vh;
+    font-size: 2.2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 3vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-color: black;
+}
+
+.constellation p{
+    font-size: 2vh;
+}
+
+.constellation div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #8beca1;
+}
+
+.constellation .img{
+    height: 10vh;
+    width: 10vh;
+    background-size: cover;
+    padding-right: 2vh;
+    background-color: red;
+}
+
+.constellation:hover{
+    background: linear-gradient(to right, transparent, rgba(227, 222, 222, 0.264), transparent);
+}
+
